@@ -1,0 +1,52 @@
+:root {
+  --ff-700: "Playfair Display", serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.2rem;
+  font-size: 1.2rem;
+  font-family: var(--ff-700);
+}
+
+.search__form {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.search__input {
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 100vw;
+  border: 3px solid black;
+  padding-inline: 1rem;
+}
+.search__clear-btn {
+  height: 100%;
+  font-size: 1rem;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.search__clear-btn:hover {
+  background-color: lightsalmon;
+  border-radius: 10px;
+  border-color: grey;
+}
